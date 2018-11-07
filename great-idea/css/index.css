@@ -3,64 +3,316 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+/* General styles at the top */
+h1 {
+  font-size: 65px;
+}
+
+button {
+  border: 1px solid black;
+  padding: 6px 35px;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.68);
+  margin: 2rem 0;
+}
+
+hr {
+  margin: 50px 0;
+  border: 1px solid rgba(0, 0, 0, 0.358);
+}
+p {
+  line-height: 1.25;
+}
+/* page styles in the middle */
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+/* Header Style */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+header nav a {
+  margin-right: 4rem;
+  text-decoration: none;
+  color: gray;
+}
+header img {
+  margin-left: auto;
+}
+
+/* Header styles Ends Here */
+
+/* Banner Style starts here  */
+.banner {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.banner .getStarted {
+  text-align: center;
+}
+.banner .getStarted h1 {
+  width: 46%;
+  margin: auto;
+}
+/* Banner Style Ends here  */
+
+/* Main starts Here */
+.fa_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.main img {
+  margin: 3rem 0;
+}
+
+.spv_wrapper {
+  display: flex;
+  margin-right: 30px;
+}
+/* Main Ends Here  */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+/* Main Ends Here */
+
+/* Services Starts Here ! */
+.services_main {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+.services_main div {
+  border: 1px solid rgba(0, 0, 0, 0.721);
+  /* width: 45%; */
+  width: 48%;
+  margin-bottom: 2rem;
+  padding: 18px 15px 0 15px;
+  background: rgba(128, 128, 128, 0.215);
+}
+.services_main div:last-of-type,
+.services_main div:nth-of-type(5) {
+  margin-bottom: 0;
+}
+.services_main div p {
+  margin-right: 1.5rem;
+}
+.services_main button {
+  border-radius: 5px;
+}
+.about_services {
+  display: flex;
+}
+.about_services div {
+  margin-right: 75px;
+}
+
+.about_services div > ul {
+  margin-top: 1rem;
+}
+.about_services div > ul > li {
+  margin: 0.5rem 0;
+}
+.about_services div > ul > li:before {
+  content: "✓";
+  margin-right: 1rem;
+}
+
+.services_title {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+/* Services Ends Here ! */
+
+/* Rules :
+  Home Page Refactor:
+
+Note that the provided HTML is blank. This is because I want you to use your code from yesterday if possible. If you didn't finish, that's fine, just use the solution from yesterday
+
+Refactor the home page layout with flexbox where inline-block was used before.
+
+In your navigation elements, point the services <a href=""></a> to services.html
+
+
+
+ Services Page Build:
+
+Update the title in your newly copied services page to say Great Idea! - Services
+
+Using the provided design file, create the services page layout using flexbox and box model.
+
+Wrap the great idea logo in an anchor tag and point the href to index.html
+
+
+Remember, you should continue using box model properties this whole time. Flexbox is only used for bigger layout pieces. You will still need content width, padding, border, and margins to succeed.
+
+
+
+Stretch Goals
+
+ Create another page based on one of the navigation items in addition to services. Try to create a layout that follows the patterns of the first two designs but with your own creative twist. Use lorem ipsum text for all your content.
+
+ Introduce media queries into your services page to create a mobile view that stacks all the boxes on top of each other on phone but looks like the layout file on desktop.
+
+*/
