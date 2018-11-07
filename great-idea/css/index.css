@@ -269,7 +269,7 @@ footer {
 }
 
 .about_services div > ul {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .about_services div > ul > li {
   margin: 0.5rem 0;
@@ -284,6 +284,41 @@ footer {
   margin-top: 2rem;
 }
 /* Services Ends Here ! */
+
+/* Contact Styling Starts here */
+/* Contact Banner style starts Here */
+.contact_banner {
+  background-image: url("https://images.pexels.com/photos/417382/pexels-photo-417382.jpeg?auto=compress&cs=tinysrgb&h=350");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+.contact_banner div {
+  background: rgba(0, 0, 0, 0.446);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.827);
+}
+.contact_banner div h1 {
+  letter-spacing: 1rem;
+} /* Contact Banner style starts Here */
+
+/* Contact Main section starts Here */
+.contact_main {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /* Contact Main section Ends Here */
+
+footer {
+  border: 1px solid red;
+}
+
+/* Contact Styling Ends here */
 
 /* Rules :
   Home Page Refactor:
