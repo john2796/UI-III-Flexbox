@@ -430,8 +430,108 @@ select {
 }
 /* address section Ends here  */
 /* Contact Styling Ends here */
+/* desktop */
 
 /* Adding Media Queries for mobile  */
+
+@media (max-width: 599px) {
+  .container {
+    width: 90%;
+  }
+  /* Header style */
+  header nav {
+    display: none;
+  }
+  header {
+    justify-content: space-between;
+  }
+  header .menu_hamburger {
+    width: 80px;
+    margin-left: 0;
+  }
+  /* Banner style */
+  .banner {
+    margin-top: 10rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner .getStarted h1 {
+    width: 70%;
+  }
+  .banner img {
+    width: 300px;
+    margin-bottom: 4rem;
+  }
+
+  .spv_wrapper,
+  .fa_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .spv_wrapper div,
+  .fa_wrapper div {
+    margin-top: 2rem;
+  }
+
+  .services_main {
+    flex-direction: column;
+  }
+  /* Services SEction  */
+  /* Services Starts Here ! */
+  .services_main {
+    flex-direction: column;
+  }
+  .services_main div {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .services_main div:last-of-type,
+  .services_main div:nth-of-type(5) {
+    margin-bottom: 3rem;
+  }
+
+  .about_services {
+    flex-direction: column;
+  }
+  .about_services div {
+    margin-right: 0;
+  }
+
+  .about_services div > ul {
+    margin: 3rem 0;
+  }
+  /* Contact section starts here */
+
+  .contact_banner div {
+    background: rgba(0, 0, 0, 0.446);
+    height: 100%;
+    text-align: center;
+    margin: 4rem 0;
+  }
+
+  /* Contact Main section starts Here */
+  .contact_main {
+    flex-direction: column;
+  } /* Contact Main section Ends Here */
+  .contact_main div {
+    width: 100%;
+  }
+  .contact_main div p {
+    margin-left: 20px;
+  }
+  .address_contact {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  header .mobile {
+    display: none;
+  }
+  header .menu_hamburger {
+    display: none;
+  }
+}
 
 /* Adding Media Queries for mobile Ends Here */
 
